@@ -71,32 +71,172 @@ ul {list-style: none;}
     .showcase-image {display: block; width: 30%;}
 }
 
-/* Tablet */
-@media (min-width: 576px) and (max-width: 991px) {
-    .container {
-        width: 90%;
-        max-width: 1100px;
-        margin: 0 auto;
-    }
+/* menu */
 
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+#menu {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-/* Desktop */
-@media (min-width: 992px) {
-    .container {
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 42px;
+}
+
+.eyebrow {
+    color: #8a5a36;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.intro {
+    color: #6b5a4e;
+    font-size: 16px;
+}
+
+
+/* CSS GRID */
+
+.coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+
+/* CARD */
+
+.coffee-card {
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(55, 35, 20, 0.10);
+    transition: 0.25s ease;
+}
+
+.coffee-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(55, 35, 20, 0.16);
+}
+
+
+/* GAMBAR */
+
+.image-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background-color: #d9c8b7;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* ISI CARD */
+
+.card-content {
+    padding: 24px;
+}
+
+.location {
+    color: #9a6b43;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.card-content p {
+    color: #67574c;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+
+/* TAG */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.tags span {
+    background-color: #f0e4d6;
+    color: #67452e;
+    border-radius: 999px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ANGGOTA 4 - RESPONSIVE MENU
+   ========================================= */
+
+/* Tablet */
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+    #menu {
         width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
+        padding: 40px 0;
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
+    .coffee-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
+
+}
+
+
+/* Desktop */
+
+@media (min-width: 992px) {
+
+    #menu {
+        width: 90%;
+        max-width: 1200px;
+        padding: 50px 0;
+    }
+
+    .coffee-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 575px) {
+
+    #menu {
+        width: 90%;
+        padding: 40px 0;
+    }
+
+    .coffee-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
 }
 
 /* footer */
