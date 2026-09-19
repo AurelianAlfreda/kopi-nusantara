@@ -39,100 +39,34 @@ ul {list-style: none;}
     .main-nav ul.main-menu li a {font-size:17px; font-weight: bold; }
 }
 
+/* Hero */
+.showcase {width: 100%; background: #f5e6d3; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;}
+.showcase-content {width: 100%;}
+.showcase h2 {color: #6f4e37; margin-bottom: 15px;}
+.showcase p {color: #654b3a; margin-bottom: 25px;}
+.btn {cursor: pointer; display: inline-block; border: 0; font-weight: bold; background: #6f4e37; color: white; font-size: 15px; padding: 12px 25px; border-radius: 5px;}
+.btn:hover {opacity: 0.8;}
+.showcase-image {display: none; max-width: 100%; height: auto; border-radius: 10px;}
+
 /* Hero Mobile */
-.showcase {width: 100%;
-    background: #f5e6d3;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-    margin-bottom: 20px;
+@media (max-width: 575px) {
+    .showcase {flex-direction: column; text-align: center; padding: 60px 20px;}
+    .showcase h2 {font-size: 28px;}
+    .showcase p {font-size: 15px;}
 }
 
-.showcase-content {
-    width: 100%;
-}
-
-.showcase h2 {
-    font-size: 28px;
-    color: #6f4e37;
-    margin-bottom: 15px;
-}
-
-.showcase p {
-    font-size: 15px;
-    color: #654b3a;
-    margin-bottom: 25px;
-}
-
-.btn {
-    cursor: pointer;
-    display: inline-block;
-    border: 0;
-    font-weight: bold;
-    background: #6f4e37;
-    color: white;
-    font-size: 15px;
-    padding: 12px 25px;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    opacity: 0.8;
-}
-
-.showcase-image {
-    display: none;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Hero  Tablet */
+/* Hero Tablet */
 @media (min-width: 576px) and (max-width: 992px) {
-    .showcase {
-        flex-direction: row;
-        text-align: left;
-        justify-content: space-between;
-        padding: 40px 25px;
-    }
-
-    .showcase-content {
-        width: 50%;
-    }
-
-    .showcase h2 {
-        font-size: 30px;
-    }
-
-    .showcase-image {
-        display: block;
-        width: 42%;
-    }
+    .showcase {flex-direction: row; text-align: left; justify-content: space-between; padding: 40px 25px;}
+    .showcase-content {width: 50%;}
+    .showcase h2 {font-size: 30px;}
+    .showcase-image {display: block; width: 40%;}
 }
 
-/* Hero - Desktop */
+/* Hero Desktop */
 @media (min-width: 993px) {
-    .showcase {
-        min-height: 400px;
-        flex-direction: row;
-        text-align: left;
-        justify-content: space-between;
-        padding: 50px;
-    }
-
-    .showcase-content {
-        width: 50%;
-    }
-
-    .showcase h2 {
-        font-size: 36px;
-    }
-
-    .showcase-image {
-        display: block;
-        width: 42%;
-    }
+    .showcase {min-height: 400px; flex-direction: row; text-align: left; justify-content: space-between; padding: 50px;}
+    .showcase-content {width: 50%;}
+    .showcase h2 {font-size: 36px;}
+    .showcase-image {display: block; width: 30%;}
 }
