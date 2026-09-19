@@ -32,7 +32,7 @@ ul {list-style: none;}
 }
 
 /* desktop */
-@media (min-width: 993px) {
+@media (min-width: 992px) {
     .main-nav ul.main-menu {justify-content: flex-end; margin-right: 100px;}
     .main-nav ul.main-menu li {padding: 0 30px;}
     .main-nav ul.main-menu li a {font-size:17px; font-weight: bold; }
@@ -183,7 +183,7 @@ ul {list-style: none;}
 
 /* Tablet */
 
-@media (min-width: 576px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 992px) {
 
     #menu {
         width: 90%;
