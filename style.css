@@ -1,0 +1,138 @@
+
+* {box-sizing: border-box; margin: 0; padding: 0;}
+body {font-family: sans-serif; background: white;color: black;font-size: 15px;line-height: 1.5;}
+a {color: #262626;text-decoration: none;}
+ul {list-style: none;}
+
+.main-nav {display: flex; align-items: center; justify-content: space-between; height: 60px; padding: 20px 0; font-size: 13px;}
+.main-nav ul {display: flex;}
+.main-nav ul li {padding: 0 10px;}
+.main-nav ul.main-menu {flex: 1; margin-left: 20px;}
+.main-nav .logo {font-size: 24px;color: #6f4e37;margin-left: 30px;}
+.main-nav ul li a:hover {border-bottom: 2px solid #262626;}
+
+.menu-btn {cursor: pointer; position: absolute; top: 20px; right: 30px; z-index: 2; display: none;}
+
+
+/* mobile */
+@media (max-width: 575px) {
+    .menu-btn {display: block;}
+    .menu-btn:hover {opacity: 0.8;}
+    .main-nav ul.main-menu {display: block; position: absolute; top: 0; left: 0; background: #f2f2f2; width: 50%; height: 100%; transform: translateX(-500px); border-right: #ccc 2px solid; opacity: 0.9; padding: 30px; margin-left: 0; transition: transform 0.5s ease-in-out;}
+    .main-nav ul.main-menu.show {transform: translateX(0);}
+    .main-nav ul.main-menu li {padding: 10px; border-bottom: #ccc 1px solid; font-size: 14px;}
+}
+
+/* tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+    .main-nav {padding: 15px 0;}
+    .main-nav .logo {font-size: 23px;}
+    .main-nav ul.main-menu {margin-left: 10px; justify-content: flex-end;}
+    .main-nav ul.main-menu li {padding: 0 20px;}
+    .main-nav ul.main-menu li a {font-size:15px; font-weight: bold;}
+}
+
+/* desktop */
+@media (min-width: 993px) {
+    .main-nav ul.main-menu {justify-content: flex-end; margin-right: 100px;}
+    .main-nav ul.main-menu li {padding: 0 30px;}
+    .main-nav ul.main-menu li a {font-size:17px; font-weight: bold; }
+}
+
+/* Hero Mobile */
+.showcase {width: 100%;
+    background: #f5e6d3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    margin-bottom: 20px;
+}
+
+.showcase-content {
+    width: 100%;
+}
+
+.showcase h2 {
+    font-size: 28px;
+    color: #6f4e37;
+    margin-bottom: 15px;
+}
+
+.showcase p {
+    font-size: 15px;
+    color: #654b3a;
+    margin-bottom: 25px;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    background: #6f4e37;
+    color: white;
+    font-size: 15px;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.showcase-image {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Hero  Tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+    .showcase {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        padding: 40px 25px;
+    }
+
+    .showcase-content {
+        width: 50%;
+    }
+
+    .showcase h2 {
+        font-size: 30px;
+    }
+
+    .showcase-image {
+        display: block;
+        width: 42%;
+    }
+}
+
+/* Hero - Desktop */
+@media (min-width: 993px) {
+    .showcase {
+        min-height: 400px;
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        padding: 50px;
+    }
+
+    .showcase-content {
+        width: 50%;
+    }
+
+    .showcase h2 {
+        font-size: 36px;
+    }
+
+    .showcase-image {
+        display: block;
+        width: 42%;
+    }
+}
