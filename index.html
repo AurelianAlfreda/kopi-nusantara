@@ -4,40 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Kopi Nusantara</title>
 </head>
 <body>
 
-    <div class="menu-btn">
-        <i class="fas fa-bars fa-2x"></i>
-    </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
 
-    <div class="container">
+                <a class="navbar-brand" href="#">Kopi Nusantara</a>
 
-        <nav class="main-nav">
+                <button class="navbar-toggler"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <h1 class="logo">Kopi Nusantara</h1>
+                <div class="collapse navbar-collapse" id="navMenu">
 
-            <ul class="main-menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+                    <ul class="navbar-nav ms-auto">
 
-        </nav>
-            <header class="showcase">
-                <div class="showcase-content">
-                    <h2>Nikmati Kopi Nusantara</h2>
-                    <p> Rasakan cita rasa kopi terbaik dari berbagai
-                        daerah di Indonesia.
-                    </p>
-                    <a href="#menu" class="btn">Lihat Menu</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+
                 </div>
-                <img src="kopi.jpg" alt="Kopi Nusantara" class="showcase-image">
-            </header>
-    </div>
+
+            </div>
+        </nav>
+                        
+        <header class="showcase">
+            <div class="container">
+
+                <div class="row align-items-center">
+
+                    <div class="col-12 col-sm-6 text-center">
+                        <h2 class="mb-3">Nikmati Kopi Nusantara</h2>
+                        <p class="mb-4"> Rasakan cita rasa kopi terbaik dari berbagai daerah di Indonesia.
+                        </p>
+                        <a href="#menu" class="btn btn-primary"> Lihat Menu</a>
+                    </div>
+                    
+                    <div class="col-12 col-sm-6 d-none d-sm-block">
+                        <img src="kopi.jpg"
+                            alt="Kopi Nusantara"
+                            class="w-100">
+                    </div>
+
+                </div>
+
+            </div>
+        </header>
 
     <main id="menu">
 
@@ -85,6 +117,13 @@
                             <span>Spicy</span>
                             <span>Low Acidity</span>
                         </div>
+                        
+                        <div class="like-box">
+                            <button type="button" class="like-btn">
+                                <i class="far fa-heart"></i> Suka
+                            </button>
+                            <span class="like-count">0</span>
+                        </div>
 
                     </div>
 
@@ -120,6 +159,13 @@
                             <span>Arabika</span>
                             <span>Bold</span>
                             <span>Chocolate</span>
+                        </div>
+
+                        <div class="like-box">
+                            <button type="button" class="like-btn">
+                                <i class="far fa-heart"></i> Suka
+                            </button>
+                            <span class="like-count">0</span>
                         </div>
 
                     </div>
@@ -158,6 +204,13 @@
                             <span>Complex</span>
                         </div>
 
+                        <div class="like-box">
+                            <button type="button" class="like-btn">
+                                <i class="far fa-heart"></i> Suka
+                            </button>
+                            <span class="like-count">0</span>
+                        </div>
+
                     </div>
 
                 </article>
@@ -170,6 +223,7 @@
                 <div class="faq-item">
                     <button type="button" class="faq-question">
                         Apa saja kopi yang diperkenalkan di Kopi Nusantara?
+                        <i class="fas fa-plus faq-icon"></i>
                     </button>
                     <div class="faq-answer">
                         <p>Kopi Nusantara memperkenalkan Kopi Gayo, Kopi Mandailing, dan Kopi Toraja.</p>
@@ -179,6 +233,7 @@
                 <div class="faq-item">
                     <button type="button" class="faq-question">
                         Dari mana asal Kopi Gayo?
+                        <i class="fas fa-plus faq-icon"></i>
                     </button>
                     <div class="faq-answer">
                         <p>Kopi Gayo berasal dari Aceh. Kopi arabika ini memiliki aroma tajam, rasa rempah, dan keasaman yang rendah.</p>
@@ -188,6 +243,7 @@
                 <div class="faq-item">
                     <button type="button" class="faq-question">
                         Bagaimana karakter rasa Kopi Mandailing?
+                        <i class="fas fa-plus faq-icon"></i>
                     </button>
                     <div class="faq-answer">
                         <p>Kopi Mandailing dari Sumatera Utara memiliki karakter rasa kuat, tubuh yang tebal, serta jejak rasa cokelat dan rempah.</p>
@@ -197,6 +253,7 @@
                 <div class="faq-item">
                     <button type="button" class="faq-question">
                         Apa ciri khas Kopi Toraja?
+                        <i class="fas fa-plus faq-icon"></i>
                     </button>
                     <div class="faq-answer">
                         <p>Kopi Toraja berasal dari Sulawesi Selatan dan memiliki perpaduan rasa earthy serta rempah yang kompleks.</p>
@@ -212,13 +269,9 @@
             <p>&copy; 2026 Kopi Nusantara. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script>
-         document.querySelector('.menu-btn').addEventListener('click',()=>document.querySelector('.main-menu').classList.toggle('show'));
-    </script>
-
    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
