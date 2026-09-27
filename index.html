@@ -12,15 +12,57 @@
 <!-- Modal Detail Produk (Anggota 4) -->
 <div class="modal fade" id="modalKopiGayo" tabindex="-1" aria-labelledby="modalKopiGayoLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
+    <div class="modal-content rounded-4 border-0">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalKopiGayoLabel">Detail Kopi Gayo</h5>
+        <h5 class="modal-title fw-bold text-brown" id="modalKopiGayoLabel">Detail Kopi Gayo</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
         <img src="assets/kopi-gayo.jpg" class="img-fluid rounded mb-3" alt="Kopi Gayo" style="max-height: 250px; object-fit: cover;">
         <p class="text-start">Kopi Gayo dipetik dari pegunungan Aceh, memiliki aroma harum yang khas dengan cita rasa asam yang seimbang dan bodi yang tebal.</p>
         <h6 class="text-start fw-bold text-success">Harga: Rp 45.000 / pack</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <button type="button" class="btn btn-primary">Beli Sekarang</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Detail Kopi Mandailing -->
+<div class="modal fade" id="modalKopiMandailing" tabindex="-1" aria-labelledby="modalKopiMandailingLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 border-0">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold text-brown" id="modalKopiMandailingLabel">Detail Kopi Mandailing</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="assets/kopi-mandailing.jpg" class="img-fluid rounded mb-3" alt="Kopi Mandailing" style="max-height: 250px; object-fit: cover;">
+        <p class="text-start">Kopi Mandailing berasal dari Sumatera Utara. Memiliki karakter rasa yang kuat (bold), bodi yang tebal, serta kombinasi cita rasa cokelat dan rempah.</p>
+        <h6 class="text-start fw-bold text-success">Harga: Rp 48.000 / pack</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <button type="button" class="btn btn-primary">Beli Sekarang</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Detail Kopi Toraja -->
+<div class="modal fade" id="modalKopiToraja" tabindex="-1" aria-labelledby="modalKopiTorajaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 border-0">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold text-brown" id="modalKopiTorajaLabel">Detail Kopi Toraja</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="assets/kopi-toraja.jpg" class="img-fluid rounded mb-3" alt="Kopi Toraja" style="max-height: 250px; object-fit: cover;">
+        <p class="text-start">Kopi Toraja (Celebes Kalossi) ditanam di dataran tinggi Sulawesi Selatan, memiliki perpaduan rasa earthy, aroma tanah dan rempah yang unik.</p>
+        <h6 class="text-start fw-bold text-success">Harga: Rp 50.000 / pack</h6>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
@@ -112,7 +154,7 @@
                 
                 <!-- Kopi Gayo -->
                  <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card coffee-card h-100">
+                    <div class="card coffee-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
                         
                         <img src="assets/kopi-gayo.jpg"
                         class="card-img-top"
@@ -141,14 +183,10 @@
                                 </button>
                                 <span class="like-count">0</span>
                             </div>
-                        //tambahan dr clara
-                        <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalKopiGayo">
-                Lihat Detail
-            </button>
-
-        </div>
-    </div>
-</div>
+                            <!-- tambahan dr clara -->
+                            <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalKopiGayo">
+                                Lihat Detail
+                            </button>
 
                         </div>
                     </div>
@@ -156,7 +194,7 @@
 
                 <!-- Kopi Mandailing -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card coffee-card h-100">
+                    <div class="card coffee-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
 
                         <img src="assets/kopi-mandailing.jpg"
                             class="card-img-top"
@@ -187,13 +225,17 @@
                                 <span class="like-count">0</span>
                             </div>
 
+                            <button type="button" class="btn btn-outline-primary w-100 rounded-pill btn-sm fw-semibold" data-bs-toggle="modal" data-bs-target="#modalKopiMandailing">
+                                Lihat Detail
+                            </button>
+
                         </div>
                     </div>
                 </div>
 
                 <!-- Kopi Toraja -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card coffee-card h-100">
+                    <div class="card coffee-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
 
                         <img src="assets/kopi-toraja.jpg"
                             class="card-img-top"
@@ -223,6 +265,10 @@
                                 </button>
                                 <span class="like-count">0</span>
                             </div>
+
+                            <button type="button" class="btn btn-outline-primary w-100 rounded-pill btn-sm fw-semibold" data-bs-toggle="modal" data-bs-target="#modalKopiToraja">
+                                Lihat Detail
+                            </button>
 
                         </div>
                     </div>
