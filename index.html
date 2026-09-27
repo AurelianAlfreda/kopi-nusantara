@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="style.css">
     <title>Kopi Nusantara</title>
 </head>
+
+<!-- Modal Detail Produk (Anggota 4) -->
+<div class="modal fade" id="modalKopiGayo" tabindex="-1" aria-labelledby="modalKopiGayoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalKopiGayoLabel">Detail Kopi Gayo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="assets/kopi-gayo.jpg" class="img-fluid rounded mb-3" alt="Kopi Gayo" style="max-height: 250px; object-fit: cover;">
+        <p class="text-start">Kopi Gayo dipetik dari pegunungan Aceh, memiliki aroma harum yang khas dengan cita rasa asam yang seimbang dan bodi yang tebal.</p>
+        <h6 class="text-start fw-bold text-success">Harga: Rp 45.000 / pack</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <button type="button" class="btn btn-primary">Beli Sekarang</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <body>
 
         <nav class="navbar navbar-expand-lg">
@@ -119,6 +141,14 @@
                                 </button>
                                 <span class="like-count">0</span>
                             </div>
+                        //tambahan dr clara
+                        <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalKopiGayo">
+                Lihat Detail
+            </button>
+
+        </div>
+    </div>
+</div>
 
                         </div>
                     </div>
