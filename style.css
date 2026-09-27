@@ -94,55 +94,22 @@ ul {list-style: none;}
 }
 
 
-/* CSS GRID */
-
-.coffee-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-
-
-/* CARD */
-
+/* CARD MENU KOPI (dibangun di atas .card) */
 .coffee-card {
-    background-color: white;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(55, 35, 20, 0.10);
     transition: 0.25s ease;
 }
 
 .coffee-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 14px 30px rgba(55, 35, 20, 0.16);
 }
 
-
-/* GAMBAR */
-
-.image-wrapper {
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    overflow: hidden;
-    background-color: #d9c8b7;
-}
-
-.image-wrapper img {
-    width: 100%;
-    height: 100%;
-    display: block;
+/* samakan tinggi gambar di semua kartu */
+.coffee-card .card-img-top {
+    height: 200px;
     object-fit: cover;
 }
 
-
-/* ISI CARD */
-
-.card-content {
-    padding: 24px;
-}
-
-.location {
+.coffee-card .location {
     color: #9a6b43;
     font-size: 13px;
     font-weight: bold;
@@ -150,86 +117,24 @@ ul {list-style: none;}
     letter-spacing: 1.5px;
 }
 
-.card-content p {
+.coffee-card .card-text {
     color: #67574c;
     font-size: 15px;
-    margin-bottom: 18px;
 }
 
 
-/* TAG */
-
+/* TAG (dibangun di atas .badge) */
 .tags {
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
+    margin-bottom: 12px;
 }
 
-.tags span {
+.tags .badge {
     background-color: #f0e4d6;
     color: #67452e;
-    border-radius: 999px;
-    padding: 5px 10px;
-    font-size: 12px;
     font-weight: 600;
-}
-
-
-/* responsive */
-
-/* Tablet */
-
-@media (min-width: 576px) and (max-width: 992px) {
-
-    #menu {
-        width: 90%;
-        padding: 40px 0;
-    }
-
-    .coffee-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-}
-
-
-/* Desktop */
-
-@media (min-width: 992px) {
-
-    #menu {
-        width: 90%;
-        max-width: 1200px;
-        padding: 50px 0;
-    }
-
-    .coffee-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
-    }
-
-}
-
-
-/* Mobile */
-
-@media (max-width: 575px) {
-
-    #menu {
-        width: 90%;
-        padding: 40px 0;
-    }
-
-    .coffee-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .card-content {
-        padding: 20px;
-    }
-
 }
 
 /* footer */
